@@ -1,0 +1,20 @@
+<div ng-controller="BlogCtrl">
+  <div class="header">
+    <ul class="nav nav-pills pull-right">
+      <li class="active"><a ng-href="#">Larry</a></li>
+      <li><a ng-href="#">Curly</a></li>
+      <li><a ng-href="#">Moe</a></li>
+    </ul>
+    <h3 class="text-muted">stooge bloggerz</h3>
+  </div>
+  <div class="blog">
+    <h1>
+      Latest Posts
+    </h1>
+    <div ng-repeat="blog in blogPosts">
+      {{blog.title}}
+      {{blog.body}}
+      {{blog.author}}
+    </div>
+  </div>
+</div>
